@@ -1,0 +1,14 @@
+.main{
+  background-color: var(--dark-gray-color);
+  display: flex;
+}
+
+.container{
+  padding: 64px 0px;
+  margin: auto;
+}
+
+.logo{
+  width: 170px;
+  height: 47.09px;
+}
