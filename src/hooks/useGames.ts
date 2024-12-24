@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { fetchGames } from "@/services/gamesService";
 import { Game, UseGamesReturn } from "@/types/games";
-import { AppError, handleError } from "@/utils/handleError";
+import { handleError } from "@/utils/handleError";
+import { AppError } from "@/types/common";
 
 export const useGames = (genre?: string, initialPage: number = 1): UseGamesReturn => {
   const [games, setGames] = useState<Game[]>([]);

@@ -1,11 +1,5 @@
 import { REQUEST_DEFAULT_ERROR_MESSAGE, UNEXPECTED_ERROR_MESSAGE, UNKNOWN_ERROR_MESSAGE } from "@/static/messages";
-import { HttpClientError } from "@/types/common";
-
-export interface AppError {
-  message: string;
-  status?: number;
-  details?: unknown;
-}
+import { AppError, HttpClientError } from "@/types/common";
 
 export const handleError = (error: unknown): AppError => {
   if (isHttpClientError(error)) {
