@@ -1,0 +1,18 @@
+.game_list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 48px 0;
+  padding: 0 0 48px;
+}
+
+.add_more {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--font-archivo);
+  font-weight: 600;
+  color: var(--white-color);
+  background-color: var(--dark-gray-font);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 48px;
+}

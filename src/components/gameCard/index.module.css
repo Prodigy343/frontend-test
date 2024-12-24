@@ -1,0 +1,106 @@
+.game_card {
+  border: 0.5px solid;
+  border-color: var(--mid-gray-color);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  width: 331px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white-color);
+  transition: transform 0.2s;
+}
+
+.game_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+  height: 240;
+  aspect-ratio: 16 / 12;
+  overflow: hidden;
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.game_image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.badge {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  font-family: var(--font-archivo);
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.game_info {
+  font-family: var(--font-archivo);
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.game_genre {
+  grid-column: 1 / -1;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: var(--font-archivo);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--dark-gray-color);
+  margin-bottom: 0;
+}
+
+.game_name {
+  text-align: left;
+  grid-column: 1;
+  font-family: var(--font-archivo);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--light-black-color);
+  margin: 12px 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game_price {
+  text-align: right;
+  grid-column: 2;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--light-black-color);
+  margin: 12px 0 20px;
+}
+
+.add_to_cart_btn {
+  font-family: var(--font-archivo);
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--light-black-color);
+  border: 1.5px solid;
+  border-color: var(--light-black-color);
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  width: 100%;
+}

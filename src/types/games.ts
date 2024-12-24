@@ -26,4 +26,5 @@ export interface UseGamesReturn {
   loading: boolean;
   error: AppError | null;
   setCurrentPage: Dispatch<SetStateAction<number>>;
+  loadGames: (append?: boolean, page?: number) => Promise<void>
 }
